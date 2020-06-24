@@ -99,7 +99,7 @@
     "fixture": "./fixture.html"
   },
   "dependencies": {
-    "re-resizable": "https://github.com/hasevr/re-resizable.git",
+    "re-resizable": "https://github.com/hasevr/re-resizable.git#forRnd",
     "react-draggable": "4.2.0",
     "tslib": "1.11.1"
   }
