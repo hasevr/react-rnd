@@ -592,6 +592,7 @@ export class Rnd extends React.PureComponent<Props, State> {
 
     return (
       <Draggable
+        nodeRef={this.refResizable}
         ref={this.refDraggable}
         handle={dragHandleClassName ? `.${dragHandleClassName}` : undefined}
         defaultPosition={defaultValue}
@@ -609,7 +610,7 @@ export class Rnd extends React.PureComponent<Props, State> {
         cancel={cancel}
         scale={scale}
       >
-        <Resizable
+        <Resizable 
           {...resizableProps}
           ref={this.refResizable}
           defaultSize={defaultValue}
